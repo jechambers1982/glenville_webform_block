@@ -1,0 +1,4 @@
+webform:
+  css:
+    theme:
+      css/webform_block.css: {}

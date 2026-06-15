@@ -1,0 +1,10 @@
+name: Glenville Webform Block
+type: module
+description: 'Allows adding a webform to a page through either a Paragraph or Content Block'
+core_version_requirement: ^11
+package: Glenville
+dependencies:
+  - block_content
+  - paragraphs
+  - text
+  - webform

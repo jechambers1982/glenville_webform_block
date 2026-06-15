@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function glenville_webform_block_theme($existing, $type, $theme, $path) {
+  // Get the module's path via the extension manager service.
+  $module_path = \Drupal::service('extension.list.module')->getPath('glenville_webform_block');
+  $templates_path = $module_path . '/templates/paragraphs';
+
+  return [
+    // Parent bundle: glen_webform_block.
+    'paragraph__glen_webform_block' => [
+      'base hook' => 'paragraph',
+      'template'  => 'paragraph--glen-webform-block',
+      'path'      => $templates_path,
+    ],
+  ];
+}
+
+function glenville_webform_block_preprocess_paragraph(array &$vars) {
+  $bundle = $vars['paragraph']->bundle();
+  if (in_array($bundle, ['glen_webform_block'], true)) {
+    $vars['#attached']['library'][] = 'glenville_webform_block/webform';
+  }
+}
