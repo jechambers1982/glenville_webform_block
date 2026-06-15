@@ -1,0 +1,13 @@
+uuid: ff3ec9a1-4955-407f-b33f-a1f37017f15d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - glenville_webform_block
+id: glen_webform_block
+label: Webform
+icon_uuid: null
+icon_default: null
+description: 'Embed a Webform.'
+behavior_plugins: {  }

@@ -1,0 +1,28 @@
+uuid: 550a5da2-b20a-4438-a24c-1c1621ebfd42
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.glenville_webform_block
+    - field.storage.block_content.field_webform_select
+  module:
+    - webform
+  enforced:
+    module:
+      - glenville_webform_block
+id: block_content.glenville_webform_block.field_webform_select
+field_name: field_webform_select
+entity_type: block_content
+bundle: glenville_webform_block
+label: 'Webform Select'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

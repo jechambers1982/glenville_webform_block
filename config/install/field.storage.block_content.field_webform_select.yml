@@ -1,0 +1,23 @@
+uuid: 3c4e3633-6d11-43eb-a5da-58dcf0f6fb9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - webform
+  enforced:
+    module:
+      - glenville_webform_block
+id: block_content.field_webform_select
+field_name: field_webform_select
+entity_type: block_content
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

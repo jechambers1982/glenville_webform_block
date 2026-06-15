@@ -1,0 +1,27 @@
+uuid: c7c152be-ab73-48c4-9c66-b5bb0e86b82c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.glen_webform_block.field_webform
+    - paragraphs.paragraphs_type.glen_webform_block
+  module:
+    - webform
+  enforced:
+    module:
+      - glenville_webform_block
+id: paragraph.glen_webform_block.default
+targetEntityType: paragraph
+bundle: glen_webform_block
+mode: default
+content:
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

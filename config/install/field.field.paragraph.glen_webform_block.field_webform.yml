@@ -1,0 +1,26 @@
+uuid: be030384-37c7-4ffd-b87a-909736335ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.glen_webform_block
+  module:
+    - webform
+  enforced:
+    module:
+      - glenville_webform_block
+id: paragraph.glen_webform_block.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: glen_webform_block
+label: Webform
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

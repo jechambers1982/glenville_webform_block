@@ -1,0 +1,35 @@
+uuid: 27019b1b-8fc4-4666-b8ad-925707ba82a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.glenville_webform_block
+    - field.field.block_content.glenville_webform_block.field_webform_select
+  module:
+    - webform
+  enforced:
+    module:
+      - glenville_webform_block
+id: block_content.glenville_webform_block.default
+targetEntityType: block_content
+bundle: glenville_webform_block
+mode: default
+content:
+  field_webform_select:
+    type: webform_entity_reference_select
+    weight: 1
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 7d5326b0-7b84-4354-8931-bad1255f886d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - glenville_webform_block
+id: glenville_webform_block
+label: 'Webform Block'
+revision: true
+description: 'Add a webform block into a CKEditor Field'
